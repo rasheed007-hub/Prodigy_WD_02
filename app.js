@@ -40,7 +40,7 @@ function resetTimer() {
     seconds = 0;
     minutes = 0;
     lapCounter = 1;
-    document.getElementById("laps").innerHTML = ""; // Clear lap history
+    document.getElementById("laps").innerHTML = ""; 
     updateDisplay();
 }
 
@@ -61,4 +61,4 @@ document.getElementById("stop").addEventListener("click", stopTimer);
 document.getElementById("reset").addEventListener("click", resetTimer);
 document.getElementById("lap").addEventListener("click", recordLap);
 
-updateDisplay();  // Initialize display
+updateDisplay();  
