@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background: linear-gradient(90deg, #2193b0, #6dd5ed);
+    background-size: 400% 400%;
+    animation: waveBackground 5s infinite linear;
+}
+
+@keyframes waveBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    margin-top: 100px;
+}
+
+#display {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#start {
+    background-color: green;
+    color: white;
+}
+
+#stop {
+    background-color: red;
+    color: white;
+}
+
+#reset {
+    background-color: gray;
+    color: white;
+}
+
+#lap {
+    background-color: blue;
+    color: white;
+}
+
+#laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#laps li {
+    font-size: 18px;
+    background: white;
+    color: black;
+    padding: 5px;
+    margin: 5px auto;
+    width: 150px;
+    border-radius: 5px;
+}
